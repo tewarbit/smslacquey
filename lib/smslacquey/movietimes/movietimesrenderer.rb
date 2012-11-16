@@ -16,7 +16,7 @@ module SmsLacquey
       response = ""
       movie_info_array.each {|info| response = response + info[0] + info[1][0].response_string}
       
-      response
+      response.slice(0, 159)
     end
     
   end
